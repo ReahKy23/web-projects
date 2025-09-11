@@ -1,0 +1,37 @@
+.diaryEntry {
+    display: none;
+    position: fixed;       
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* keeps div proportional to center of viewport */
+    border: solid;
+    border-radius: 1em;
+    padding: 10px;
+    max-width: 600px;
+    width: 80%;
+  }
+
+  .diaryEntry:target {
+    display: block;
+  }
+
+  .entryTitle{
+    padding-left: 1em;
+    padding-top: 1em;
+    z-index: 1;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  .entryText{
+    padding:  2em 3em;
+  }
+  .closeButton{
+    display: flex;
+    justify-content: end;
+    padding: 1em;
+  }
+  
+  p{
+    font-size:  1.3rem;
+    text-align: center;
+  }
