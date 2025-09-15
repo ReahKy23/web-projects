@@ -30,7 +30,9 @@
     justify-content: end;
     padding: 1em;
   }
-  
+  a{
+    color: black;
+  }
   p{
     font-size:  1.3rem;
     text-align: center;
