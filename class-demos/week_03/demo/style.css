@@ -1,0 +1,44 @@
+body{
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    /* % is the size we use for containers, not positions */
+    width: 100%;
+    height: 100%;
+    /* adding color to see the container */
+    background-color: beige;
+
+    /* flexbox is the easiest way to center items on a page  */
+    /* display of flex*/
+    display: flex;
+    /* quick center on screen */
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+
+    /* positioning any element inside the box to use flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#move{
+    width: 200px;
+    height: 200px;
+    background-color: cyan;
+
+    /* adjust position */
+    /* away to break the flow layout */
+    position: absolute;
+    /* psoitions shouldn't really use percernt  */
+    top: 50px;
+    left: 500px;
+}
