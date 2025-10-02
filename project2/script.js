@@ -41,10 +41,13 @@ window.onload = () => {
   function createAlert() {
     // stores the random saying populated into a variable
     let mantra = sayingGenerator();
+    const { x, y} = randomPlace();
 
     // creates a new div with a p element nested inside
     let alertBox = document.createElement("div");
     alertBox.classList.add("alertBox");
+    alertBox.style.top = `${x}px`
+    alertBox.style.left = `${y}px`
 
     // creates the alert message and nestles it inside the div w/ the random message
     let alertMessage = document.createElement("p");
@@ -57,8 +60,22 @@ window.onload = () => {
     let container = document.getElementById("container");
     container.appendChild(alertBox);
   }
-  setInterval(createAlert, 2000);
+  setInterval(createAlert, 400);
 
   //next: I want to plot the messages into different parts of the viewport
+  let screenWidth = window.innerWidth;
+  let screenHeight = window.innerHeight
+  console.log(screenWidth);
+  console.log(screenHeight)
+
+  const randomPlace = ()=>{
+    let horiValue = Math.floor(Math.random() * screenWidth * 1.5);
+    let vertValue = Math.floor(Math.random() * screenHeight )
+    // return the values as x and y coordinates
+    return { x:horiValue, y: vertValue}
+  }
+
+  randomPlace()
+  console.log(randomPlace())
   
 };
