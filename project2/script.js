@@ -51,7 +51,7 @@ window.onload = () => {
 
     // creates the alert message and nestles it inside the div w/ the random message
     let alertMessage = document.createElement("p");
-    alertMessage.classList.add("boxText");
+    alertMessage.classList.add("alertText");
     alertMessage.textContent = mantra;
 
     // adds it to teh body 
@@ -60,19 +60,19 @@ window.onload = () => {
     let container = document.getElementById("container");
     container.appendChild(alertBox);
   }
-  setInterval(createAlert, 400);
+  setInterval(createAlert, 500);
 
   //next: I want to plot the messages into different parts of the viewport
-  let screenWidth = window.innerWidth;
-  let screenHeight = window.innerHeight
+  let screenWidth = document.documentElement.clientWidth;
+  let screenHeight = document.documentElement.clientHeight;
   console.log(screenWidth);
   console.log(screenHeight)
 
   const randomPlace = ()=>{
-    let horiValue = Math.floor(Math.random() * screenWidth * 1.5);
-    let vertValue = Math.floor(Math.random() * screenHeight )
+    let horiValue = Math.floor(Math.random() * screenWidth) - 100;
+    let vertValue = Math.floor(Math.random() * screenHeight);
     // return the values as x and y coordinates
-    return { x:horiValue, y: vertValue}
+    return { x:vertValue, y: horiValue}
   }
 
   randomPlace()
