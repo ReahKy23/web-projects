@@ -111,7 +111,8 @@ window.onload = () => {
     container.appendChild(alertBox);
   }
 
-  setInterval(createAlert, 700);
+  setInterval(createAlert, 850);
+  
 
   //next: I want to plot the messages into different parts of the viewport
   let screenWidth = document.documentElement.clientWidth;
@@ -127,5 +128,4 @@ window.onload = () => {
   };
 
   randomPlace();
-  console.log(randomPlace());
 };
