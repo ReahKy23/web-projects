@@ -90,12 +90,12 @@ window.onload = () => {
 
     let okBtn = document.createElement("button");
     okBtn.classList.add("btn");
-    okBtn.textContent = "Ok";
+    okBtn.textContent = "TRUE";
     okBtn.onclick = () => alertBox.remove();
 
     let cancelBtn = document.createElement("button");
     cancelBtn.classList.add("btn");
-    cancelBtn.textContent = "Cancel";
+    cancelBtn.textContent = "I KNOW";
     cancelBtn.onclick = () => alertBox.remove();
 
     buttons.appendChild(okBtn);
