@@ -1,0 +1,15 @@
+body{
+    /* centering form on webpage */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    /* removing scroll bar */
+    margin: 0;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
