@@ -1,0 +1,14 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "Due 10/27 Build a forum or blog site for a community. Your community will be the client who has commissioned you to design and develop a public-facing site.    Your chosen community can be real (a Hunter student organization, your 5th grade summer camp, a community brought together by a shared passion for X, etc.). fictional (the group of all your childhood imaginary friends, etc.) or anywhere in between (the plants in your apartment, the bacteria that makes up your microbiome, etc.)   Make sure you are clear on who the audience for your website is (e.g. members of the community vs outsiders,) and that your design caters to your selected audiences, while staying truthful to the nature of the community. At the same time, make sure to consider the *content* of the website. Does your community have a manifesto? A list of members? A schedule? And is the content coming from a different website of the same community? Are you writing it? Does an AI write it? Are the users creating most of it?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

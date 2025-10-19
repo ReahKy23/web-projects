@@ -1,0 +1,237 @@
+:root {
+    --tan: #ebe9dd;
+    --deep-olive: #51441b;
+    --button-green: #706134;
+    --button-green-50: #70613480;
+    --header-font: 'nove', sans-serif;
+    --header-font-size: 100px;
+    --body-font: 'Instrument Serif', serif;
+    --body-font-size: 20px;
+
+}
+
+.home-return {
+    background-color: var(--tan);
+    width: 50px;
+    height: 50px;
+    border: solid var(--button-green-50) 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.home-return:hover {
+    text-decoration: none;
+    box-shadow: 1px 1px 10px 1px #ebe9dd;
+}
+
+/* Homepage styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--deep-olive);
+}
+
+body#home {
+    background-image: url(imgs/tanbg.png);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar {
+    border: solid var(--deep-olive) 1px;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--deep-olive);
+}
+
+a,
+p,
+span {
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#home-content {
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-content>img {
+    max-width: 1094px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color: #ebe9dd00;
+    border: dashed var(--button-green) 1px;
+    border-radius: 10px;
+    color: var(--button-green);
+    font-family: var(--body-font);
+    font-size: 16px;
+    margin: 30px;
+}
+
+button:hover {
+    background-color: var(--button-green-50);
+    cursor: pointer;
+}
+
+
+
+/* Events Page styling */
+body#events {
+    background-image: url(imgs/olivebg.png);
+}
+
+#events-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+#events-page {
+    color: var(--tan);
+}
+
+
+.page-title>h1 {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+    margin: 0;
+}
+
+.page-title>p {
+    font-size: var(--body-font);
+    text-align: start;
+}
+
+.events-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 720px;
+    max-height: 750px;
+    margin-top: 20px;
+    gap: 10px;
+    overflow: scroll;
+}
+
+.event {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 650px;
+    height: 190px;
+    background-color: var(--tan);
+    border-radius: 10px;
+}
+
+.event-img {
+    width: 205px;
+    height: 175px;
+    background-color: var(--button-green-50);
+    border: solid var(--button-green);
+    border-radius: 10px;
+}
+
+.event-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    width: 420px;
+    height: 175px;
+    border: solid var(--button-green);
+    border-radius: 10px;
+}
+
+.event-title {
+    width: 420px;
+    height: 60px;
+    border-bottom: solid;
+}
+
+.event-blurb {
+    display: flex;
+    align-items: flex-end;
+    width: 420px;
+    height: 105px;
+
+}
+
+.event-blurb>p {
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+}
+
+a.event-link {
+    text-decoration: none;
+}
+
+a.event-link:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 10px 1px #ebe9dd;
+}
+
+#suggestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 50px;
+    width: 350px;
+    height: 180px;
+    background-color: var(--tan);
+    color: var(--deep-olive);
+}
+
+#suggestText>p {
+    text-align: left;
+    padding-left: 30px;
+    margin-bottom: 0;
+
+}
+
+/* posts page styling */
+body#posts {
+    background-image: url(imgs/tanbg.png);
+}
+
+#posts-page {
+    color: var(--deep-olive);
+}
