@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+/* > retrieves the specific children of the selector we are grabbing */
+/* form > div = all the divs that exist inside of the form selector */
+/* , is a multi-selector, which allows us to just add the same reulset to multiple
+selectors at once */
+form > div, form > input, textarea{
+    width: 100%;
+    flex-grow: 2;
+}
+
+.form-title{
+    display: flex;
+}
+
+.form-title > input{
+    flex-grow: 2;
+}
+
+.file-upload >label{
+    border:4px #519872 solid;
+    background-color: #519872;
+}
+.file-upload > label:hover{
+    cursor: pointer;
+    border: 4px #3f7859 solid;
+    background-color: #3f7859;
+}
+
+input[type=file]{
+    display: none;
+}
+
+#all-posts{
+    width: 40%;
+}
+.post > img{
+    width: 100%;
+}

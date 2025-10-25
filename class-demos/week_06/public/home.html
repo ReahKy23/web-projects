@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <title>class 6 👍🏽</title>
+    </head>
+    <body>
+        <!-- adding the enctype attribute, which let's browser know we have images to process -->
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+
+            <div class="form-title">
+                <label for="title">enter title:</label>
+            <input type="text" name="title">
+            </div>
+            <div class="file-upload">
+                <label for="theimage">upload</label>
+                <input type="file" id="theimage" name="theimage">
+            </div>
+            
+            <textarea name="caption" ></textarea>
+            <input type="submit" value="make a post">
+        </form>
+
+        <div id="all-posts">
+
+        </div>
+    </body>
+</html>
