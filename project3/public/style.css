@@ -1,3 +1,4 @@
+/* global styling */
 :root {
     --tan: #ebe9dd;
     --deep-olive: #51441b;
@@ -20,7 +21,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     margin: 20px;
 }
@@ -28,6 +29,22 @@
 .home-return:hover {
     text-decoration: none;
     box-shadow: 1px 1px 10px 1px #ebe9dd;
+}
+
+.page-title>h1 {
+    font-family: var(--header-font);
+    font-size: var(--header-font-size);
+    margin: 0;
+}
+
+.page-title>p {
+    font-size: var(--body-font);
+    text-align: start;
+}
+
+.instruct {
+    margin: 0;
+    opacity: 0.5;
 }
 
 /* Homepage styling */
@@ -124,17 +141,6 @@ body#events {
 }
 
 
-.page-title>h1 {
-    font-family: var(--header-font);
-    font-size: var(--header-font-size);
-    margin: 0;
-}
-
-.page-title>p {
-    font-size: var(--body-font);
-    text-align: start;
-}
-
 .events-container {
     display: flex;
     justify-content: flex-start;
@@ -144,7 +150,15 @@ body#events {
     max-height: 750px;
     margin-top: 20px;
     gap: 10px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+    /* For Firefox */
+    -webkit-scrollbar {
+        display: none;
+        /* For Chrome, Safari, and Opera */
+    }
 }
 
 .event {
@@ -206,7 +220,7 @@ a.event-link:hover {
     box-shadow: 1px 1px 10px 1px #ebe9dd;
 }
 
-#suggestion {
+#sug-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -230,8 +244,193 @@ a.event-link:hover {
 /* posts page styling */
 body#posts {
     background-image: url(imgs/tanbg.png);
+    display: flex;
+    flex-direction: column;
+    /* overflow:hidden; */
+    margin: 0;
 }
 
-#posts-page {
+#posts-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: var(--deep-olive);
 }
+
+#post-home:hover {
+    box-shadow: 1px 1px 10px 1px var(--button-green)
+}
+
+#posts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: fit content;
+    gap: 5px;
+}
+
+#postBtn {
+    align-self: flex-end;
+    margin: 0;
+}
+
+#postBtn:hover {
+    text-decoration: underline;
+}
+
+#postContainer {
+    border: solid var(--deep-olive) 1px;
+    width: 90vw;
+    height: 550px;
+    padding: 10px;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.postUpload {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px
+}
+.postName{
+    text-align: left;
+    margin:0;
+}
+.postComment {
+    width: 200px;
+    height: auto;
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+}
+
+.postUpload > img{
+    width: 200px;
+    height: auto;
+    background-size: cover;
+}
+
+.likeBtn:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* modal: this modal code was taken from w3schools */
+.modal {
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.442);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 75%
+}
+
+#alert-modal{
+    background-color: #fefefe;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 30%;
+    height: fit-content;
+}
+#alert-close{
+    float: right;
+}
+#alert-close:hover{
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+  }
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* modal form styling */
+.form-suggestion {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-suggestion>input {
+    width: 450px;
+    height: 230px;
+}
+
+.formBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column;
+}
+
+.file-upload>label {
+    border: solid var(--button-green);
+    width: fit-content;
+    padding: 50px
+}
+
+.file-upload>label:hover {
+    cursor: pointer;
+}
+
+#theimage {
+    display: none;
+}
+
+.post-comment {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+
+

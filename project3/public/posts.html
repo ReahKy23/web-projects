@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>WE OUTCHEA!</title>
+    <!-- importing the font family used in the site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/duk3ols.css">
+
+    <!-- linking css and js files -->
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body id="posts">
+    <div class="page-title" id="posts-header">
+        <h1>Sharing is Caring</h1>
+        <p>BEEN TO ONE OF OUR EVENTS? TELL US ALL ABOUT IT!</p>
+        <p class="instruct">post a review or even a picture</p>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>OOOH Whatcha Gonna Uplaod?</p>
+            <p class="instruct">keep it PG!</p>
+            
+            <form method="POST" action="/upload" enctype="multipart/form-data">
+                <div class="user-name">
+                    <!-- label "for" attribute needs an associated "id" -->
+                    <label for="name">enter your name: </label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="file-upload">
+                    <!-- label "for" attribute needs an associated "id" -->
+                    <label for="image">upload</label>
+                    <input type="file" name="image" id="image">
+                </div>
+                <div class="post-comment">
+                    <label for="comment">Add a comment</label>
+                    <textarea name="comment"></textarea>
+                </div>
+                    <input type="submit" value="make post">
+            </form>
+        </div>
+
+    </div>
+
+    <div id="posts-content">
+        <button id="postBtn" class="modalBtn">post</button>
+        <div id="postContainer">
+
+            <div class="old-post postUpload">
+                <p class="postName">Lolay says:</p>
+                <div class="postComment">
+                    <p>
+                        This is the first comment</p>
+                </div>
+                <div class="postLikes">
+                    <span class="likeBtn">♡</span>
+                    <span class="likeCount"> 0</span>
+                    <span> likes</span>
+                </div>
+
+            </div>
+            <div class="old-post postUpload">
+                <p class="postName">Peter says:</p>
+                <div class="postComment">
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div class="postLikes">
+                    <span class="likeBtn">♡</span>
+                    <span class="likeCount"> 0</span>
+                    <span> likes</span>
+                </div>
+
+            </div>
+            <div class="old-post postUpload">
+                <p class="postName">Peter says:</p>
+                <div class="postComment">
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div class="postLikes">
+                    <span class="likeBtn">♡</span>
+                    <span class="likeCount"> 0</span>
+                    <span>likes</span>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <a href="index.html" class="home-return" id="post-home">
+        <span>home</span>
+    </a>
+</body>
+
+</html>
