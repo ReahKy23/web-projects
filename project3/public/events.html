@@ -14,162 +14,160 @@
 </head>
 
 <body id="events">
-
-    <div id="events-section">
-        <div class="page-title" id="events-page">
-            <h1> EVENTS</h1>
-            <p>GET THE SCOOP ON OUR UPCOMING EVENTS</p>
-            <p class="instruct">Scroll up to see all events</p>
+    <div id="events-container">
+        <div class="navbar">
+            <a href="index.html">
+                <p>HOME</p>
+            </a>
+            <a href="#">
+                <p>ABOUT</p>
+            </a>
+            <a href="events.html">
+                <p>EVENTS</p>
+            </a>
+            <a href="posts.html">
+                <p>POST</p>
+            </a>
         </div>
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>SUGGEST AN EVENT</p>
-                <form autocomplete="on">
-                    <div class="form-name">
-                        <label for="user">Tell Us Your Name: </label>
-                        <input type="text" id="user" name="user" required>
+        <div id="events-section">
+            <div id="events-left">
+                <div id="pt-top">
+                    <h1 id="ep-title"> EVENTS</h1>
+                    <p>GET THE SCOOP ON OUR UPCOMING EVENTS</p>
+                    <p class="instruct">Scroll up to see all events</p>
+                </div>
+                <div id="pt-bottom">
+                    <div id="sug-section">
+                        <div id="suggestText">
+                            <p>
+                                Have a suggestion for a future event? <br>
+                                Tell us all about it
+                            </p>
+                        </div>
+                        <div class="modalBtn">
+                            <button>suggest here</button>
+                        </div>
                     </div>
-                    <div class="form-email">
-                        <label for="email">What's your email:</label>
-                        <input type="email" id="email" name="email"  >
-                    </div>
-                    <div class="form-suggestion">
-                        <label for="comment">Tell us all about this awesome event you have in mind</label>
-                        <textarea name="comment"></textarea>
-                    </div>
-
-                    <div class="formBtn">
-                        <input id="subBtn" type="submit" value="send it! ✈">
-                    </div>
-                </form>
-
+                </div>
             </div>
-        </div>
-        <!-- alert popup -->
-        <div class="hidden" id="alert-modal">
-            <span id="alert-close">&times;</span>
-            <h2>Submitted sucessfully</h2>
-            <p id="alertText"></p>
-        </div>
 
-        <div class="events-container">
-            <a class="event-link">
-                <div class="event" id="event1">
-                    <div class="event-img">
-                        <img>
-                    </div>
-                    <div class="event-desc">
-                        <div class="event-title">
-                            <h2>EVENT TITLE 1</h2>
+            <div class="events-right">
+                <div class="event-link">
+                    <div class="event" id="event1">
+                        <div class="event-img">
+                            <img>
                         </div>
-                        <div class="event-blurb">
-                            <p>Event dsctription:<br>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="event-link">
-                <div class="event" id="event2">
-                    <div class="event-img">
-                        <img>
-                    </div>
-                    <div class="event-desc">
-                        <div class="event-title">
-                            <h2>EVENT TITLE 2 </h2>
-                        </div>
-                        <div class="event-blurb">
-                            <p>Event dsctription:<br>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua
-                            </p>
+                        <div class="event-desc">
+                            <div class="event-title">
+                                <h2>EVENT TITLE 1</h2>
+                            </div>
+                            <div class="event-blurb">
+                                <p>Event dsctription:<br>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </a>
+                <div class="event-link">
+                    <div class="event" id="event2">
+                        <div class="event-img">
+                            <img>
+                        </div>
+                        <div class="event-desc">
+                            <div class="event-title">
+                                <h2>EVENT TITLE 2 </h2>
+                            </div>
+                            <div class="event-blurb">
+                                <p>Event dsctription:<br>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <a href="#" class="event-link">
-                <div class="event" id="event3">
-                    <div class="event-img">
-                        <img>
-                    </div>
-                    <div class="event-desc">
-                        <div class="event-title">
-                            <h2>EVENT TITLE 3</h2>
+                <div class="event-link">
+                    <div class="event" id="event3">
+                        <div class="event-img">
+                            <img>
                         </div>
-                        <div class="event-blurb">
-                            <p>Event dsctription:<br>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="event-link">
-                <div class="event" id="event4">
-                    <div class="event-img">
-                        <img>
-                    </div>
-                    <div class="event-desc">
-                        <div class="event-title">
-                            <h2>EVENT TITLE 4</h2>
-                        </div>
-                        <div class="event-blurb">
-                            <p>Event dsctription:<br>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua
-                            </p>
+                        <div class="event-desc">
+                            <div class="event-title">
+                                <h2>EVENT TITLE 3</h2>
+                            </div>
+                            <div class="event-blurb">
+                                <p>Event dsctription:<br>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </a>
-            <a href="#" class="event-link">
-                <div class="event" id="event5">
-                    <div class="event-img">
-                        <img>
-                    </div>
-                    <div class="event-desc">
-                        <div class="event-title">
-                            <h2>EVENT TITLE 5</h2>
+                <div class="event-link">
+                    <div class="event" id="event4">
+                        <div class="event-img">
+                            <img>
                         </div>
-                        <div class="event-blurb">
-                            <p>Event dsctription:<br>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua
-                            </p>
+                        <div class="event-desc">
+                            <div class="event-title">
+                                <h2>EVENT TITLE 4</h2>
+                            </div>
+                            <div class="event-blurb">
+                                <p>Event dsctription:<br>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </a>
-
-        </div>
-        <div id="sug-section">
-            <div id="suggestText">
-                <p>
-                    Have a suggestion for a future event? <br>
-                    Tell us all about it
-                </p>
             </div>
-            <div class="modalBtn">
-                <button>suggest here</button>
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>SUGGEST AN EVENT</p>
+                    <form autocomplete="on">
+                        <div class="form-name">
+                            <label for="user">Tell Us Your Name: </label>
+                            <input type="text" id="user" name="user" required>
+                        </div>
+                        <div class="form-email">
+                            <label for="email">What's your email:</label>
+                            <input type="email" id="email" name="email"  >
+                        </div>
+                        <div class="form-suggestion">
+                            <label for="comment">Tell us all about this awesome event you have in mind</label>
+                            <textarea name="comment"></textarea>
+                        </div>
+
+                        <div class="formBtn">
+                            <input id="subBtn" type="submit" value="send it! ✈">
+                        </div>
+                    </form>
+
+                </div>
             </div>
+            <!-- alert popup -->
+            <div class="hidden" id="alert-modal">
+                <span id="alert-close">&times;</span>
+                <h2>Submitted sucessfully</h2>
+                <p id="alertText"></p>
+            </div>
+            
         </div>
     </div>
 
-    <a href="index.html" class="home-return">
-        <span>home</span>
-    </a>
 
 </body>
 

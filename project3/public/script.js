@@ -35,7 +35,9 @@ window.onload = () => {
       oldLikeCounts[index].textContent = count;
     });
   });
-
+  
+  getPosts()
+  
   subBtn.addEventListener("click", ()=>{
     modal.style.display = 'none';
     alert.classList.remove('hidden')
@@ -47,7 +49,7 @@ window.onload = () => {
 
 
 
-  getPosts()
+  
 
 };
 

@@ -14,96 +14,111 @@
 </head>
 
 <body id="posts">
-    <div class="page-title" id="posts-header">
-        <h1>Sharing is Caring</h1>
-        <p>BEEN TO ONE OF OUR EVENTS? TELL US ALL ABOUT IT!</p>
-        <p class="instruct">post a review or even a picture</p>
-    </div>
-
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>OOOH Whatcha Gonna Uplaod?</p>
-            <p class="instruct">keep it PG!</p>
-            
-            <form method="POST" action="/upload" enctype="multipart/form-data">
-                <div class="user-name">
-                    <!-- label "for" attribute needs an associated "id" -->
-                    <label for="name">enter your name: </label>
-                    <input type="text" name="name" id="name">
-                </div>
-                <div class="file-upload">
-                    <!-- label "for" attribute needs an associated "id" -->
-                    <label for="image">upload</label>
-                    <input type="file" name="image" id="image">
-                </div>
-                <div class="post-comment">
-                    <label for="comment">Add a comment</label>
-                    <textarea name="comment"></textarea>
-                </div>
-                    <input type="submit" value="make post">
-            </form>
+    <div class="body-container">
+        <div class="navbar">
+            <a href="index.html">
+                <p>HOME</p>
+            </a>
+            <a href="#">
+                <p>ABOUT</p>
+            </a>
+            <a href="events.html">
+                <p>EVENTS</p>
+            </a>
+            <a href="posts.html">
+                <p>POST</p>
+            </a>
         </div>
 
-    </div>
+        <div class="page-title" id="posts-header">
+            <h1>Sharing is Caring</h1>
+            <p>BEEN TO ONE OF OUR EVENTS? TELL US ALL ABOUT IT!</p>
+            <p class="instruct">post a review or even a picture</p>
+        </div>
 
-    <div id="posts-content">
-        <button id="postBtn" class="modalBtn">post</button>
-        <div id="postContainer">
+        <div id="myModal" class="modal">
 
-            <div class="old-post postUpload">
-                <p class="postName">Lolay says:</p>
-                <div class="postComment">
-                    <p>
-                        This is the first comment</p>
-                </div>
-                <div class="postLikes">
-                    <span class="likeBtn">♡</span>
-                    <span class="likeCount"> 0</span>
-                    <span> likes</span>
-                </div>
-
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>OOOH Whatcha Gonna Uplaod?</p>
+                <p class="instruct">keep it PG!</p>
+                
+                <form method="POST" action="/upload" enctype="multipart/form-data">
+                    <div class="user-name">
+                        <!-- label "for" attribute needs an associated "id" -->
+                        <label for="name">enter your name: </label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="file-upload">
+                        <!-- label "for" attribute needs an associated "id" -->
+                        <label for="image">upload</label>
+                        <input type="file" name="image" id="image">
+                    </div>
+                    <div class="post-comment">
+                        <label for="comment">Add a comment</label>
+                        <textarea name="comment"></textarea>
+                    </div>
+                        <input type="submit" value="make post">
+                </form>
             </div>
-            <div class="old-post postUpload">
-                <p class="postName">Peter says:</p>
-                <div class="postComment">
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-                <div class="postLikes">
-                    <span class="likeBtn">♡</span>
-                    <span class="likeCount"> 0</span>
-                    <span> likes</span>
-                </div>
-
-            </div>
-            <div class="old-post postUpload">
-                <p class="postName">Peter says:</p>
-                <div class="postComment">
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
-                <div class="postLikes">
-                    <span class="likeBtn">♡</span>
-                    <span class="likeCount"> 0</span>
-                    <span>likes</span>
-                </div>
-
-            </div>
-
 
         </div>
-    </div>
 
-    <a href="index.html" class="home-return" id="post-home">
-        <span>home</span>
-    </a>
+        <div id="posts-content">
+            <button id="postBtn" class="modalBtn">post</button>
+            <div id="postContainer">
+
+                <div class="old-post postUpload">
+                    <p class="postName">Lolay says:</p>
+                    <div class="postComment">
+                        <p>
+                            This is the first comment</p>
+                    </div>
+                    <div class="postLikes">
+                        <span class="likeBtn">♡</span>
+                        <span class="likeCount"> 0</span>
+                        <span> likes</span>
+                    </div>
+
+                </div>
+                <div class="old-post postUpload">
+                    <p class="postName">Peter says:</p>
+                    <div class="postComment">
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="postLikes">
+                        <span class="likeBtn">♡</span>
+                        <span class="likeCount"> 0</span>
+                        <span> likes</span>
+                    </div>
+
+                </div>
+                <div class="old-post postUpload">
+                    <p class="postName">Peter says:</p>
+                    <div class="postComment">
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="postLikes">
+                        <span class="likeBtn">♡</span>
+                        <span class="likeCount"> 0</span>
+                        <span>likes</span>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+       
+    </div>
 </body>
 
 </html>
