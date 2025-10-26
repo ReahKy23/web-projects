@@ -7,7 +7,12 @@ window.onload = () => {
   const subBtn = document.getElementById('subBtn')
   const alert = document.getElementById('alert-modal')
   const alertClsd = document.getElementById('alert-close')
+  const aboutBtn = document.getElementById('aboutpgBtn')
 
+  // about page button
+  aboutBtn.addEventListener('click',()=>{
+    window.location.href = "about.html"
+  })
 
   sugBtn.addEventListener("click", openModal);
 
@@ -47,6 +52,7 @@ window.onload = () => {
     alert.style.display = "none";
   })
 
+  
 
 
   
