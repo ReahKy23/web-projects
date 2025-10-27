@@ -210,6 +210,12 @@ body#events {
     border-radius: 10px;
 }
 
+.event-img >img{
+    width: 205px;
+    height: 175px;
+    border-radius: 10px;
+}
+
 .event-desc {
     display: flex;
     flex-direction: column;
