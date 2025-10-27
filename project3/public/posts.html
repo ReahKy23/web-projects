@@ -33,7 +33,9 @@
         <div class="page-title" id="posts-header">
             <h1>Sharing is Caring</h1>
             <p>BEEN TO ONE OF OUR EVENTS? TELL US ALL ABOUT IT!</p>
-            <p class="instruct">post a review or even a picture</p>
+            <p class="instruct">
+                ✎ post a review, even a picture, or leave some kind words ♡
+            </p>
         </div>
 
         <div id="myModal" class="modal">
@@ -41,26 +43,28 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>OOOH Whatcha Gonna Uplaod?</p>
-                <p class="instruct">keep it PG!</p>
-                
-                <form method="POST" action="/upload" enctype="multipart/form-data">
-                    <div class="user-name">
-                        <!-- label "for" attribute needs an associated "id" -->
-                        <label for="name">enter your name: </label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="file-upload">
-                        <!-- label "for" attribute needs an associated "id" -->
-                        <label for="image">upload</label>
-                        <input type="file" name="image" id="image">
-                    </div>
-                    <div class="post-comment">
-                        <label for="comment">Add a comment</label>
-                        <textarea name="comment"></textarea>
-                    </div>
-                        <input type="submit" value="make post">
-                </form>
+                <div id="posts-modal" class="modal-spacing">
+                    <h1>OOOH SHARE THE DEETS!</h1>
+                    <p class="instruct"> but keep it PG!</p>
+                    
+                    <form method="POST" action="/upload" enctype="multipart/form-data">
+                        <div class="user-name">
+                            <br>
+                            <!-- label "for" attribute needs an associated "id" -->
+                            <label for="name">Type Your Name Here: </label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="file-upload">
+                            <label for="image" id="upload">Upload a file here:</label>
+                            <input type="file" name="image" id="image">
+                        </div>
+                        <div class="post-comment">
+                            <label for="comment">Add a comment</label>
+                            <textarea id="comm-texta" name="comment"></textarea>
+                        </div>
+                            <input id="subBtn" type="submit" value="make post ✎">
+                    </form>
+                </div>
             </div>
 
         </div>
@@ -70,10 +74,12 @@
             <div id="postContainer">
 
                 <div class="old-post postUpload">
-                    <p class="postName">Lolay says:</p>
+                    <p class="postName">Lola says:</p>
                     <div class="postComment">
                         <p>
-                            This is the first comment</p>
+                            My friend recommended I attend one of their events. 
+                            So much funnnn, will dif be back ♡
+                        </p>
                     </div>
                     <div class="postLikes">
                         <span class="likeBtn">♡</span>
@@ -82,33 +88,35 @@
                     </div>
 
                 </div>
+                
                 <div class="old-post postUpload">
                     <p class="postName">Peter says:</p>
                     <div class="postComment">
                         <p>
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="postLikes">
-                        <span class="likeBtn">♡</span>
-                        <span class="likeCount"> 0</span>
-                        <span> likes</span>
-                    </div>
-
-                </div>
-                <div class="old-post postUpload">
-                    <p class="postName">Peter says:</p>
-                    <div class="postComment">
-                        <p>
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                            if you're seeing this you're loved 🥰
+                        </p>
                     </div>
                     <div class="postLikes">
                         <span class="likeBtn">♡</span>
                         <span class="likeCount"> 0</span>
                         <span>likes</span>
+                    </div>
+
+                </div>
+
+                <div class="old-post postUpload">
+                    <p class="postName">Noah says:</p>
+                    <img src="imgs/dinner.jpg" alt="dinner pic" style="height: 150px;">
+                    <div class="postComment">
+                        <p>
+                            my friends and I went to the "comunity suppa" event
+                            took this pic! 😋
+                        </p>
+                    </div>
+                    <div class="postLikes">
+                        <span class="likeBtn">♡</span>
+                        <span class="likeCount"> 0</span>
+                        <span> likes</span>
                     </div>
 
                 </div>

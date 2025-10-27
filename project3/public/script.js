@@ -9,16 +9,15 @@ window.onload = () => {
   const alertClsd = document.getElementById('alert-close')
   const aboutBtn = document.getElementById('aboutpgBtn')
 
-  // about page button
-  aboutBtn.addEventListener('click',()=>{
-    window.location.href = "about.html"
-  })
+
 
   sugBtn.addEventListener("click", openModal);
 
   function openModal() {
     modal.style.display = "block";
   }
+
+  
 
   closeBtn.addEventListener("click", closeModal);
   function closeModal() {
@@ -51,9 +50,6 @@ window.onload = () => {
   alertClsd.addEventListener("click", ()=>{
     alert.style.display = "none";
   })
-
-  
-
 
   
 

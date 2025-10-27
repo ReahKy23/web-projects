@@ -137,32 +137,37 @@
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>SUGGEST AN EVENT</p>
-                    <form autocomplete="on">
-                        <div class="form-name">
-                            <label for="user">Tell Us Your Name: </label>
-                            <input type="text" id="user" name="user" required>
-                        </div>
-                        <div class="form-email">
-                            <label for="email">What's your email:</label>
-                            <input type="email" id="email" name="email"  >
-                        </div>
-                        <div class="form-suggestion">
-                            <label for="comment">Tell us all about this awesome event you have in mind</label>
-                            <textarea name="comment"></textarea>
-                        </div>
+                    
+                    <div class="modal-spacing">
+                        <h1>SUGGEST AN EVENT</h1>
+                        <form autocomplete="on">
+                            <div class="form-name">
+                                <br>
+                                <label for="user">Tell Us Your Name: </label>
+                                <input type="text" id="user" name="user" required>
+                            </div>
+                            <div class="form-email">
+                                <br>
+                                <label for="email">What's Your Email:</label>
+                                <input type="email" id="email" name="email"  >
+                            </div>
+                            <div class="form-suggestion">
+                                <br>
+                                <label for="comment">Tell us all about this awesome event you have in mind:</label>
+                                <textarea name="comment"></textarea>
+                            </div>
 
-                        <div class="formBtn">
-                            <input id="subBtn" type="submit" value="send it! ✈">
-                        </div>
-                    </form>
-
+                            <div class="formBtn">
+                                <input id="subBtn" type="submit" value="send it! ✈">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             <!-- alert popup -->
             <div class="hidden" id="alert-modal">
                 <span id="alert-close">&times;</span>
-                <h2>Submitted sucessfully</h2>
+                <h2> Suggestion Received Sucessfully</h2>
                 <p id="alertText"></p>
             </div>
             
