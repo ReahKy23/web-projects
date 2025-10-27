@@ -1,0 +1,22 @@
+{
+  "name": "web-projects",
+  "version": "1.0.0",
+  "description": "1) Log In to your GitHub account 2) [Fork this repository](https://github.com/samheckle/web-projects-starter) ![fork](https://github.com/samheckle/web-projects-fa-25/tree/main/classes/week_01/images/fork.png) 3) Rename your forked repository to `web-projects` 4) Create the repository 5) Open your terminal or git bash on your computer 6) Generate your ssh keys with [this tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) 7) Add your ssh key to your GitHub account [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) 8) Find a good place to store your folder on your computer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReahKy23/web-projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReahKy23/web-projects/issues"
+  },
+  "homepage": "https://github.com/ReahKy23/web-projects#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

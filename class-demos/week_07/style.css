@@ -1,0 +1,41 @@
+#body{ 
+    width: 100px;
+}
+
+/* is this a computer? */
+@media screen and (orientation: landscape){
+    /* once it is determined to be a computer */
+    /* add our normale css selector */
+    body{
+        background: navy;
+    }
+}
+
+/* breakpoints: "max-width" is ocnsidered a breakdown */
+/* commonly used for extra small and small devices */
+@media screen and (orientation: portait) and (max-width: 450px){
+    body{
+        background-color: magenta;
+    }
+}
+
+@media screen and (max-width: 576px){
+    p{
+        font-size: 72px;
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 786px){
+    p{
+        font-size: 60px;
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 786px) and (max-width: 992px){
+    p{
+        font-size: 50px;
+        background-color: lightgreen;
+    }
+}
