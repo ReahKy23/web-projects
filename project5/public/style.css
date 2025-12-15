@@ -215,6 +215,9 @@ main {
 .event-label>span {
     color: #51441B;
 }
+.event-label>p {
+    color: #fffefe;
+}
 
 .event-bill>button {
     width: 30%;

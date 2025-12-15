@@ -26,7 +26,7 @@ let database = new nedb({
 });
 
 let userdb = new nedb({
-  filename: path.join(dataDir, "userdb.txt"),
+  filename: "userdb.txt",
   autoload: true,
 });
 
@@ -121,9 +121,10 @@ app.get("/visits", (req, res) => {
 
 
 
-app.get("/register", (req, res) => {
+app.get("/account", (req, res) => {
   res.sendFile("user.html", { root: "public" });
 });
+
 
 app.post("/signup", async (req, res) => {
   try {
@@ -136,15 +137,16 @@ app.post("/signup", async (req, res) => {
       pass: password,
     };
 
-    const insertedDoc = await userdb.insertAsync(newUser);
-    console.log("✓ User created successfully:", insertedDoc);
+    userdb.insert(newUser, ()=>{
+      req.session.loggedInUser = username;
+    res.redirect("/account");
+    })
     
     // Auto-login the user after signup
-    req.session.loggedInUser = username;
-    res.redirect("/");
+    
   } catch (error) {
     console.error("Error creating user:", error);
-    res.redirect("/register?error=signup");
+    res.redirect("/account?error=signup");
   }
 });
 
@@ -171,7 +173,7 @@ app.post("/authenticate", async (req, res) => {
         let session = req.session; // retrieve the session that exists on the request
         session.loggedInUser = foundUser.user; // set the logged in user to be successful log in username
         console.log("✓ User logged in successfully:", foundUser.user);
-        res.redirect("/");
+        res.redirect("/account");
       } else {
         console.log("Invalid password for user:", req.body.username);
         res.redirect("/?error=invalidpassword");
