@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>Project 5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="nav-lft">
+        <a href="#about-container">ABOUT</a>
+        <a href="#events-container">EVENTS</a>
+      </div>
+
+      <div id="nav-rt" class="user-tile">
+        <a href="#" id="openSidebar"><span>Hello, USER</span></a>
+      </div>
+    </nav>
+
+    <main id="user-page">
+      <div id="events-container">
+        <div id="events-title">
+          <a href="#"><h3>Your Events |</h3></a>
+          <a href="#">
+            <h3 style="opacity: 0.5">All Events</h3>
+          </a>
+        </div>
+        <div id="event-modules">
+          <div class="event-bill event-booked">
+            <div class="event-label">
+              <span>Event Date here</span>
+              <h3>Event Name</h3>
+            </div>
+            <button>Cancel</button>
+          </div>
+          <div class="event-bill events-rsvp">
+            <div class="event-label">
+              <span>Event Date here</span>
+              <h3>Event Name</h3>
+            </div>
+            <button>Cancel</button>
+          </div>
+          <div class="event-bill events-rsvp">
+            <div class="event-label">
+              <span>Event Date here</span>
+              <h3>Event Name</h3>
+            </div>
+            <button>RSVP</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="review-prompt">
+        <div id="review-header">
+          <h3>Tell Us Your Thoughts</h3>
+          <p>big or small; whether about a past event or how life's going</p>
+        </div>
+        <div id="review-content">
+          <form>
+            <input id="review-img" type="file" name="review-img" />
+            <input
+              id="review-text"
+              type="text"
+              name="review-text"
+              placeholder="Leave a Review Here"
+            />
+          </form>
+        </div>
+      </div>
+      <div id="about-container">
+        <div id="about-lft">
+          <img src="imgs/aboutimg.jpg" />
+        </div>
+        <div id="about-rt">
+          <h2>Est. 2025</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- log out sidebar modal -->
+    <div id="sidebarOverlay" class="hidden">
+      <div id="sidebar">
+        <button type="button" id="closeSidebar">x</button>
+        <div id="sidebar-content">
+          <div id="sidebar-header">
+            <h3>UserName</h3>
+            <p>keep your head up</p>
+          </div>
+          <div id="sidebar-opts">
+            <a href="#"><span>Profile</span></a>
+            <a href="#"><span>Settings</span></a>
+            <a href="#"><span>Dark Mode</span></a>
+          </div>
+          <div id="sidebar-footer">
+            <a href="/logout"><p>Sign Out</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="sidebar.js"></script>
+
+  </body>
+</html>

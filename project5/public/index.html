@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <title>Project 5</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="nav-lft">
+        <a href="#about-container">ABOUT</a>
+        <a href="#events-container">EVENTS</a>
+      </div>
+
+      <div id="nav-rt">
+        <button type="button" class="openModal">Login</button>
+      </div>
+    </nav>
+
+    <main>
+      <div id="main-contents">
+        <h1>WE OUTCHEA</h1>
+        <p>BECAUSE WE ARE BETTER TOGETHER</p>
+        <span id="arrow">↓scroll down↓</span>
+      </div>
+
+      <div id="about-container">
+        <div id="about-lft">
+          <img src="imgs/aboutimg.jpg" />
+        </div>
+        <div id="about-rt">
+          <h2>Est. 2025</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+        </div>
+      </div>
+      <div id="events-container">
+        <div id="events-title">
+          <h2>Upcoming Events</h2>
+        </div>
+        <div id="event-modules">
+          <div class="event-bill">
+            <div class="event-label">
+              <span>Event Date here</span>
+              <h3>Event Name</h3>
+            </div>
+            <button type="button" class="openModal">RSVP</button>
+          </div>
+          <div class="event-bill">
+            <div class="event-label">
+              <span>Event Date here</span>
+              <h3>Event Name</h3>
+            </div>
+            <button type="button" class="openModal">RSVP</button>
+          </div>
+          <div class="event-bill">
+            <div class="event-label">
+              <span>Event Date here</span>
+              <h3>Event Name</h3>
+            </div>
+            <button type="button" class="openModal">RSVP</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- sign-up modal -->
+    <div id="modalOverlay" class="hidden modal">
+      <div id="modal">
+        <div id="modal-content">
+          <!-- Close button MUST be type="button" -->
+          <button type="button" id="closeModal">x</button>
+
+          <!-- SIGN UP FORM -->
+          <div id="signup-section">
+            <div id="modal-header">
+              <h2>Sign Up</h2>
+              <p>Create an account to continue</p>
+            </div>
+
+            <div id="modal-form">
+              <form id="signupForm" action="/signup" method="POST">
+                <label for="signup-uname">Enter a username:</label>
+                <input
+                  type="text"
+                  id="signup-uname"
+                  name="username"
+                  placeholder="enter username"
+                  required
+                />
+
+                <label for="signup-pswd">Enter Password</label>
+                <input
+                  type="password"
+                  id="signup-pswd"
+                  name="password"
+                  placeholder="enter password"
+                  required
+                />
+
+                <label for="signup-pswdConfirm">Re-enter Password</label>
+                <input
+                  type="password"
+                  id="signup-pswdConfirm"
+                  name="pswdConfirm"
+                  placeholder="re-enter password"
+                  required
+                />
+
+                <input id="submitSignup" type="submit" value="Sign Up" />
+              </form>
+              
+              <p class="toggle-text">
+                Already have an account? 
+                <a href="#" id="showLogin">Log in here</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- LOGIN FORM -->
+          <div id="login-section" style="display: none;">
+            <div id="modal-header">
+              <h2>Log In</h2>
+              <p>Welcome back!</p>
+            </div>
+
+            <div id="modal-form">
+              <form id="loginForm" action="/authenticate" method="POST">
+                <label for="login-uname">Username:</label>
+                <input
+                  type="text"
+                  id="login-uname"
+                  name="username"
+                  placeholder="enter username"
+                  required
+                />
+
+                <label for="login-pswd">Password:</label>
+                <input
+                  type="password"
+                  id="login-pswd"
+                  name="password"
+                  placeholder="enter password"
+                  required
+                />
+
+                <input id="submitLogin" type="submit" value="Log In" />
+              </form>
+              
+              <p class="toggle-text">
+                Don't have an account? 
+                <a href="#" id="showSignup">Sign up here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
